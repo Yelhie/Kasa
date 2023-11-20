@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    font-family: "Montserrat", sans-serif;
+
+    nav {
+        font-size: 30px;
+        margin-left: 20px;
+
+        a {
+            text-decoration: none;
+            color: #FF6060;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            padding-left: 70px;
+        }
+
+        li :hover {
+            text-decoration: underline;
+        }
+    }
+}

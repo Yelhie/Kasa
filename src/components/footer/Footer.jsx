@@ -1,4 +1,5 @@
 import LogoWhite from './../../assets/logo_white.png'
+import './footer.scss';
 
 export default function footer() {
     return (
@@ -10,6 +11,9 @@ export default function footer() {
         </footer>
     );
 }
+
+
+
 
 
 

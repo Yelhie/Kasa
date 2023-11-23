@@ -1,0 +1,30 @@
+.collapse_container {
+    width: 85%;
+    // margin: 10 30px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+.collapse_title {
+    // display: flex;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    transition: height 0.3s ease-in-out;
+}
+
+/* Style pour le contenu déplié */
+.expanded {
+    height: 80px;
+}
+
+/* Style pour le contenu replié */
+.toggle-content {
+    text-align: center;
+    display: none;
+}
+
+/* Style pour afficher le contenu lorsque déplié */
+.expanded .toggle-content {
+    display: block;
+}

@@ -1,5 +1,5 @@
 import './collapse.scss'
-import arrow from '../../assets/arrow.png';
+import arrow from '../../assets/arrow_up.png';
 import { useState } from 'react';
 
 export default function Collapse({ title, content }) {
@@ -7,9 +7,9 @@ export default function Collapse({ title, content }) {
     const [isExpanded, setExpanded] = useState(false);
 
     // Fonction pour basculer l'état (déplié/replié)
-    const toggleText = () => {
+    function toggleText() {
         setExpanded(!isExpanded);
-    };
+    }
 
     return (
         <>
@@ -30,3 +30,5 @@ export default function Collapse({ title, content }) {
         </>
     )
 }
+
+

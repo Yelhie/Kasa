@@ -13,7 +13,7 @@ export default function About() {
             <section className='about_section'>
                 {aboutJson.map(aboutData => {
                     return (
-                        <div key={aboutData.id} className="about_collapse">
+                        <div key={aboutData.id} >
                             <Collapse title={aboutData.title} content={aboutData.content} />
                         </div>
                     )

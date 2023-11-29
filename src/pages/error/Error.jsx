@@ -1,7 +1,10 @@
+import './error.scss';
+
 export default function ErrorPage() {
     return (
-        <div>
-            <h1>Error</h1>
+        <div className="errorContainer">
+            <p className="errorNumber">404</p>
+            <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
         </div>
-    )
+    );
 }

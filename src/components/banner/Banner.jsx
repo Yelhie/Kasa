@@ -3,16 +3,22 @@ import BannerAbout from '../../assets/banner_about.png';
 import BannerHome from '../../assets/banner_home.png';
 import './banner.scss';
 
-//Déclare la constant Banner avec le paramétre page
+// Associe chaque page à un texte/posibilité d'ajouter différent texte par banner
+const bannerTexts = {
+    home: 'Chez vous, partout et ailleurs',
+    about: '',
+};
+
+// Déclare la constante Banner avec le paramètre page
 const Banner = ({ page }) => {
     // Choisissez la bannière en fonction de la page
     const chooseBanner = () => {
         switch (page) {
-            case 'about':
-                return BannerAbout;
             case 'home':
                 return BannerHome;
-            // Si aucun lien vers une banniére affiche celle-ci par défaut
+            case 'about':
+                return BannerAbout;
+            // Si aucun lien vers une bannière, affiche BannerHome par défaut
             default:
                 return BannerHome;
         }
@@ -20,7 +26,8 @@ const Banner = ({ page }) => {
 
     return (
         <div className='banner'>
-            <img src={chooseBanner()} alt={`Bannière de la catégorie ${page}.`} />
+            <img className='banner_img' src={chooseBanner()} alt={`Bannière de la catégorie ${page}.`} />
+            <p className='banner_txt'>{bannerTexts[page]}</p>
         </div>
     );
 };

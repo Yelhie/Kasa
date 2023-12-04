@@ -1,3 +1,58 @@
-h1 {
-    color: aqua;
+.logement_page {
+    width: 90%;
+    margin: 0 auto;
+
+    .logementContainer {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        font-family: "Montserrat", sans-serif;
+        color: #FF6060;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_gauche {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 36px;
+                margin: 30px 0 0 0;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin: 10px 0 10px 0;
+            }
+        }
+
+        &_droit {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .logementContainer_collapse {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+    }
 }

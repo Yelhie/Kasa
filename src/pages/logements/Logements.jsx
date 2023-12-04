@@ -24,30 +24,30 @@ export default function Logements() {
         return <ErrorPage />;
     }
     return (
-        <section className='LogementPage'>
+        <section className='logement_page'>
             <Carousel slides={logement.pictures} />
-            <div className='Titles'>
-                <h1>{logement.title}</h1>
-                <h2>{logement.location}</h2>
+
+            <div className='logementContainer'>
+                <div className='logementContainer_gauche'>
+                    <h1>{logement.title}</h1>
+                    <h2>{logement.location}</h2>
+                    <Tags className='Tags' tags={logement.tags} />
+                </div>
+
+                <div className='logementContainer_droit'>
+                    <User className='user' name={logement.host.name} profilePicture={logement.host.picture} />
+                    <StarRating className='StarRating' rating={logement.rating} />
+                </div>
             </div>
-            <div className='User'>
-                <User name={logement.host.name} profilePicture={logement.host.picture} />
-            </div>
-            <div>
-                <Tags className='Tags' tags={logement.tags} />
-                <StarRating className='StarRating' rating={logement.rating} />
-            </div>
-            <div>
-                <Collapse className='Description' title="Description" content={logement.description} />
-                <Collapse className='Équipements' title="Équipements" content={logement.equipments} />
+
+            <div className='logementContainer_collapse'>
+                <div>
+                    <Collapse className='Équipements' title="Équipements" content={logement.equipments} />
+                </div>
+                <div>
+                    <Collapse className='Description' title="Description" content={logement.description} />
+                </div>
             </div>
         </section>
     );
 }
-
-
-
-
-
-
-

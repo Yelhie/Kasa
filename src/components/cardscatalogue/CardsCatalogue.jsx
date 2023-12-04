@@ -9,9 +9,9 @@ const CardCatalogue = () => {
 
     return (
         // Section principale pour afficher le catalogue de cartes
-        <section className="Cards">
+        <section className="cards">
             {/* Conteneur de cartes pour afficher chaque carte */}
-            <div className="card-container">
+            <div className="card_container">
                 {/* Utilise la fonction map pour parcourir chaque élément du tableau de données */}
                 {Data.map((logement) => (
                     // Utilise NavLink pour créer des liens de navigation dynamiques vers chaque logement

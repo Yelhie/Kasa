@@ -1,15 +1,16 @@
 import CardCatalogue from "../../components/cardscatalogue/CardsCatalogue";
 import Banner from "../../components/banner/Banner";
+import './home.scss';
 
 function Home() {
     return (
         <>
-            {/* appel du composant Banner */}
-            <Banner page='home' />
-            {/* appel du composant Card Catalogue */}
-            <div className='home'>
+            <section className='home'>
+                {/* appel du composant Banner */}
+                <Banner page='home' />
+                {/* appel du composant Card Catalogue */}
                 <CardCatalogue />
-            </div>
+            </section>
         </>
     )
 }

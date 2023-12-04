@@ -1,9 +1,10 @@
 import React from "react";
+import './tag.scss';
 
 function Tags({ tags }) {
     return (
-        <div className="Tag">
-            <ul className="TagTxt">
+        <div className="tags">
+            <ul className="tag_texte">
                 {tags.map((tag, index) => (
                     <li key={index}>{tag}</li>
                 ))}

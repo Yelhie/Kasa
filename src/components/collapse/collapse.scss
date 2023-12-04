@@ -1,30 +1,40 @@
 .collapse_container {
-    width: 85%;
-    // margin: 10 30px;
-    background-color: #e6e6e6;
-    border-radius: 5px;
+    border-radius: 15px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f6f6;
 }
 
 .collapse_title {
-    // display: flex;
-    height: 40px;
-    border-radius: 5px;
+
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 15px;
     background-color: #FF6060;
-    transition: height 0.3s ease-in-out;
+    margin: 0;
+
+
+}
+
+/* Style pour le contenu replié */
+.toggle_text_container {
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+    color: #FF6060;
+
+    border-radius: 0 0 15px 15px;
+
+    p {
+        margin: 0;
+    }
 }
 
 /* Style pour le contenu déplié */
 .expanded {
-    height: 80px;
-}
-
-/* Style pour le contenu replié */
-.toggle-content {
-    text-align: center;
-    display: none;
-}
-
-/* Style pour afficher le contenu lorsque déplié */
-.expanded .toggle-content {
-    display: block;
+    display: flex;
 }

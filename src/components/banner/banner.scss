@@ -1,12 +1,22 @@
 .banner {
-    padding: 0 50px;
+    position: relative;
     text-align: center;
 
-    img {
+    .banner_img {
         width: 100%;
-        height: 155px;
+        height: 223px;
         border-radius: 1rem;
         object-fit: cover;
     }
 
+    .banner_txt {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: 500;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+    }
 }

@@ -4,14 +4,12 @@ import './home.scss';
 
 function Home() {
     return (
-        <>
-            <section className='home'>
-                {/* appel du composant Banner */}
-                <Banner page='home' />
-                {/* appel du composant Card Catalogue */}
-                <CardCatalogue />
-            </section>
-        </>
+        <section className='home_section'>
+            {/* appel du composant Banner */}
+            <Banner page='home' />
+            {/* appel du composant Card Catalogue */}
+            <CardCatalogue />
+        </section>
     )
 }
 

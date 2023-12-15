@@ -24,7 +24,7 @@ export default function Logements() {
         return <ErrorPage />;
     }
     return (
-        <section className='logement_page'>
+        <section className='logement_section'>
             <Carousel slides={logement.pictures} />
 
             <div className='logementContainer'>

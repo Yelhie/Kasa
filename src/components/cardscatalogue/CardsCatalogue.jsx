@@ -9,7 +9,7 @@ const CardCatalogue = () => {
 
     return (
         // Section principale pour afficher le catalogue de cartes
-        <section className="cards">
+        <section className="cardsCatalogue_section">
             {/* Conteneur de cartes pour afficher chaque carte */}
             <div className="card_container">
                 {/* Utilise la fonction map pour parcourir chaque élément du tableau de données */}

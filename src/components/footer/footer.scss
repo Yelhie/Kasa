@@ -1,4 +1,4 @@
-.footer {
+footer {
     background-color: black;
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -6,9 +6,7 @@
     justify-content: end;
     align-items: center;
     color: white;
-    height: 200px;
     width: 100%;
-    margin-top: 40px;
 
     .footer_logo {
         padding: 60px 0 35px 0;

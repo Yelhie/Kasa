@@ -16,18 +16,10 @@
         text-align: right;
         margin: 0;
         align-items: start;
-
-        @media screen and (max-width: 768px) {
-            font-size: 12px;
-        }
     }
 
     .user_picture {
         border-radius: 50%;
         height: 64px;
-
-        @media screen and (max-width: 768px) {
-            height: 32px;
-        }
     }
 }

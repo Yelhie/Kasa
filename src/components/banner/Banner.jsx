@@ -9,14 +9,17 @@ const bannerTexts = {
     about: '',
 };
 
-// Déclare la constante Banner avec le paramètre page
+export const HOME = "home"
+export const ABOUT = "about"
+
+// Déclare la constante Banner avec la propriété page
 const Banner = ({ page }) => {
-    // Choisissez la bannière en fonction de la page
+    // Choix de la bannière en fonction de la page
     const chooseBanner = () => {
         switch (page) {
-            case 'home':
+            case HOME:
                 return BannerHome;
-            case 'about':
+            case ABOUT:
                 return BannerAbout;
             // Si aucun lien vers une bannière, affiche BannerHome par défaut
             default:

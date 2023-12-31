@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../cards/Card';
 import { NavLink } from 'react-router-dom';
-import Data from '../../data/locations.json';
+import Data from '../../Data/locations.json';
 import './cardsCatalogue.scss';
 
 

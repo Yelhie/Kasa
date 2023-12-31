@@ -6,8 +6,8 @@ import React from 'react';
 import Carousel from '../../components/carousel/Carousel';
 import ErrorPage from '../error/Error';
 import User from '../../components/user/User';
-import StarRating from '../../components/rating/Rating';
-import Tags from '../../components/tag/tag';
+import Rating from '../../components/rating/Rating';
+import Tags from '../../components/tag/Tags';
 import Collapse from '../../components/collapse/Collapse';
 //import Data
 import Data from '../../Data/locations.json';
@@ -36,7 +36,7 @@ export default function Logements() {
 
                 <div className='logementContainer_droit'>
                     <User className='user' name={logement.host.name} profilePicture={logement.host.picture} />
-                    <StarRating className='StarRating' rating={logement.rating} />
+                    <Rating className='StarRating' rating={logement.rating} />
                 </div>
             </div>
 

@@ -7,6 +7,10 @@
         height: 223px;
         border-radius: 1rem;
         object-fit: cover;
+
+        @media screen and (max-width: 650px) {
+            height: 100px;
+        }
     }
 
     .banner_txt {
@@ -18,5 +22,14 @@
         font-weight: 500;
         color: white;
         font-family: "Montserrat", sans-serif;
+
+        @media screen and (max-width: 650px) {
+            font-size: 24px;
+            font-weight: 500;
+
+            width: 335px;
+            height: 111px;
+            flex-shrink: 0;
+        }
     }
 }

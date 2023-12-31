@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import LogoRed from './../../assets/logo_red.png'
 import './header.scss';
 
-export default function header() {
+export default function Header() {
     return (
         <header className="header">
             <div className="header_logo">
@@ -12,7 +12,7 @@ export default function header() {
             <nav className="header_nav">
                 <ul>
                     <li>
-                        <NavLink to="/" >Accueil</NavLink>
+                        <NavLink to="/" activeClassName="active" >Accueil</NavLink>
                     </li>
                     <li>
                         <NavLink to="/about" >A propos</NavLink>

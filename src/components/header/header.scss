@@ -1,59 +1,60 @@
-header {
-    padding: 40px 4vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
+.header {
+  padding: 40px 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
 
-    img {
-        @media screen and (max-width: 650px) {
-            width: 145px;
-            height: 46.881px;
-        }
+  img {
+    @media screen and (max-width: 650px) {
+      width: 145px;
+      height: 46.881px;
+    }
+  }
+
+  .header_nav {
+    font-size: 30px;
+    margin-left: 20px;
+
+    @media screen and (max-width: 650px) {
+      font-size: 20px;
+      margin: 0;
     }
 
-    .header_nav {
-        font-size: 30px;
-        margin-left: 20px;
+    a {
+      text-decoration: none;
+      color: #ff6060;
 
-        @media screen and (max-width: 650px) {
-            font-size: 20px;
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #FF6060;
-
-            &.active {
-                text-decoration: underline;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-
-            @media screen and (max-width: 650px) {
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-start;
-                flex: 1 0 0;
-                width: 190px;
-                height: 17px;
-                white-space: nowrap;
-                font-family: "Montserrat", sans-serif;
-            }
-        }
-
-        li {
-            padding-left: 2vw;
-
-            @media screen and (max-width: 650px) {}
-        }
-    }
-
-    li :hover {
+      &.active {
         text-decoration: underline;
+      }
     }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      @media screen and (max-width: 650px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 1 0 0;
+        width: 190px;
+        height: 17px;
+        white-space: nowrap;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    li {
+      padding-left: 2vw;
+
+      @media screen and (max-width: 650px) {
+      }
+    }
+  }
+
+  li :hover {
+    text-decoration: underline;
+  }
 }

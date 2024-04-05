@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import ErrorPage from "./pages/error/Error";
-import Logements from "./pages/logements/logements";
+import { Home } from "./pages/home/Home";
+import { About } from "./pages/about/About";
+import { Header } from "./components/header/Header";
+import { Footer } from "./components/footer/Footer";
+import { ErrorPage } from "./pages/error/Error";
+import { Logements } from "./pages/logements/Logements";
+import "./style.scss";
 
 function App() {
   return (

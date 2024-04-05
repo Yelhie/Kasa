@@ -1,25 +1,24 @@
 .cardsCatalogue_section {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px 30px;
-    margin-bottom: 35px;
-    justify-content: center;
-    border-radius: 25px;
-    background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 30px;
+  // margin-bottom: 35px;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #f6f6f6;
 
-
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        margin: 0;
-        padding: 0;
-    }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
 }

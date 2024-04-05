@@ -1,25 +1,25 @@
 .user_container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .user_name {
+    padding-right: 15px;
     display: flex;
-    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+    margin: 0;
+    align-items: start;
+  }
 
-    @media screen and (max-width: 768px) {
-        gap: 10px;
-        margin-top: 0;
-    }
-
-    .user_name {
-        padding-right: 15px;
-        display: flex;
-        font-size: 23px;
-        font-weight: 500;
-        font-family: "Montserrat", sans-serif;
-        text-align: right;
-        margin: 0;
-        align-items: start;
-    }
-
-    .user_picture {
-        border-radius: 50%;
-        height: 64px;
-    }
+  .user_picture {
+    border-radius: 50%;
+    height: 64px;
+  }
 }

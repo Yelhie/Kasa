@@ -1,19 +1,13 @@
-import LogoWhite from './../../assets/logo_white.png'
-import './footer.scss';
+import LogoWhite from "./../../assets/logo_white.webp";
+import "./footer.scss";
 
-export default function footer() {
-    return (
-        <footer className='footer'>
-            <div className="footer_logo">
-                <img src={LogoWhite} alt="logo Kasa" />
-            </div>
-            <p className='footer_copyright'>© 2020 Kasa. All rights reserved</p>
-        </footer>
-    );
-}
-
-
-
-
-
-
+export const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer_logo">
+        <img src={LogoWhite} alt="logo Kasa" />
+      </div>
+      <p className="footer_copyright">© 2020 Kasa. All rights reserved</p>
+    </footer>
+  );
+};

@@ -1,22 +1,18 @@
-import React from 'react';
-import emptyStar from '../../assets/EmptyStar.png';
-import filledStar from '../../assets/FilledStar.png';
-import './rating.scss';
+import emptyStar from "../../assets/EmptyStar.webp";
+import filledStar from "../../assets/FilledStar.webp";
+import "./rating.scss";
 
-const Rating = ({ rating }) => {
-    const renderStars = () => {
-        return Array.from({ length: 5 }, (_, index) => (
-            <img className="star_image"
-                key={index}
-                src={index < rating ? filledStar : emptyStar}
-                alt={index < rating ? 'filled star' : 'empty star'}
-            />
-        ));
-    };
+export const Rating = ({ rating }) => {
+  const renderStars = () => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <img
+        className="star_image"
+        key={index}
+        src={index < rating ? filledStar : emptyStar}
+        alt={index < rating ? "filled star" : "empty star"}
+      />
+    ));
+  };
 
-    return <div className="star_rating">{renderStars()}</div>;
+  return <div className="star_rating">{renderStars()}</div>;
 };
-
-export default Rating;
-
-

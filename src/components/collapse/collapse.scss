@@ -1,39 +1,38 @@
 .collapse_container {
-    border-radius: 15px;
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    background-color: #f6f6f6;
+  border-radius: 15px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background-color: #f6f6f6;
 }
 
 .collapse_title {
-
-    cursor: pointer;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    border-radius: 15px;
-    background-color: #FF6060;
-    margin: 0;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-radius: 15px;
+  background-color: #ff6060;
+  margin: 0;
 }
 
 /* Style pour le contenu replié */
 .toggle_text_container {
-    display: none;
-    flex-direction: column;
-    padding: 15px;
-    height: 100%;
-    color: #FF6060;
+  display: none;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+  color: #ff6060;
 
-    border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 /* Style pour le contenu déplié */
 .expanded {
-    display: flex;
+  display: flex;
 }

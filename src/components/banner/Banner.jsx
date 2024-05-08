@@ -2,20 +2,20 @@ import BannerAbout from "../../assets/banner_about.webp";
 import BannerHome from "../../assets/banner_home.webp";
 import "./banner.scss";
 
-const bannerTexts = {
-  home: "Chez vous, partout et ailleurs",
-  about: "",
-};
-
-export const HOME = "home";
-export const ABOUT = "about";
-
 export const Banner = ({ page }) => {
+  const home = "home";
+  const about = "about";
+
+  const bannerTexts = {
+    home: "Chez vous, partout et ailleurs",
+    about: "",
+  };
+
   const chooseBanner = () => {
     switch (page) {
-      case HOME:
+      case home:
         return BannerHome;
-      case ABOUT:
+      case about:
         return BannerAbout;
       default:
         return BannerHome;

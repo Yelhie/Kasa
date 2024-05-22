@@ -38,16 +38,16 @@ npm run dev
 
 **Home page**
 
-![Kasa home page](https://github.com/Yelhie/xi5ftcai605u/blob/master/img/kasa_24121510.jpg)
+![Kasa home page](https://github.com/Yelhie/Kasa/blob/master/screenshot/kasa_24121510.jpg)
 
 **Page logement**
 
-![Kasa page logement](https://github.com/Yelhie/xi5ftcai605u/blob/master/img/kasa_24121406.jpg)
+![Kasa page logement](https://github.com/Yelhie/Kasa/blob/master/screenshot/kasa_24121406.jpg)
 
 **Page logement**
 
-![Kasa page logement](https://github.com/Yelhie/xi5ftcai605u/blob/master/img/kasa_24121431.jpg)
+![Kasa page logement](https://github.com/Yelhie/Kasa/blob/master/screenshot/kasa_24121431.jpg)
 
 **Page A propos**
 
-![Kasa page a propos](https://github.com/Yelhie/xi5ftcai605u/blob/master/img/kasa_24121547.jpg)
+![Kasa page a propos](https://github.com/Yelhie/Kasa/blob/master/screenshot/kasa_24121547.jpg)

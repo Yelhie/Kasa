@@ -25,14 +25,14 @@ npm run dev
 
 ```
 
-## Tech Stack
+## Stack Technique
 
-**Client:**
-
-- Vite
-- React
-- React Router
-- Sass
+|  Backend   |   Frontend   | Base de données | Documentation API et Test |
+|:----------:|:------------:|:---------------:|:-------------------------:|
+|  |     Vite     |                 |                   |
+|  |    React     |                 |                   |
+|  | React Router |                 |                   |
+|  |     Sass     |               |                     |
 
 ## Screenshots
 
